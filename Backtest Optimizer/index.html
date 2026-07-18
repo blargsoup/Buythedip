@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TQQQ Backtester</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Google+Sans+Code:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+
+    <style>
+        :root{
+            --font-sans:'Google Sans','Roboto',sans-serif;
+            --font-mono:'Google Sans Code',monospace;
+        }
+
+        body{
+            font-family:var(--font-sans);
+            background:#0f172a;
+            color:#f1f5f9;
+        }
+
+        .custom-slider::-webkit-slider-runnable-track{
+            background:#334155;
+            height:6px;
+            border-radius:3px;
+        }
+
+        .custom-slider::-webkit-slider-thumb{
+            -webkit-appearance:none;
+            background:#3b82f6;
+            width:18px;
+            height:18px;
+            border-radius:50%;
+            margin-top:-6px;
+            border:2px solid #0f172a;
+        }
+    </style>
+</head>
+
+<body class="p-6">
+
+<header class="mb-6">
+
+    <h1 class="text-2xl font-bold text-blue-400">
+        Modular TQQQ Strategy Backtester
+    </h1>
+
+    <p class="text-slate-400">
+        Portfolio Engine Refactor
+    </p>
+
+</header>
+
+<div id="app">
+
+    <!--
+        Existing controls, table,
+        chart and ledger are copied
+        from your current HTML.
+
+        Only the JavaScript changes.
+    -->
+
+</div>
+
+<script type="module" src="./src/main.js"></script>
+
+</body>
+</html>
